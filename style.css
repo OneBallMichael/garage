@@ -101,8 +101,8 @@ nav {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 48px 80px;
+  justify-content: center;
+  padding: 140px 48px 80px;
   position: relative;
   overflow: hidden;
 }
@@ -1078,7 +1078,7 @@ footer {
   }
 
   #hero {
-    padding: 0 24px 60px;
+    padding: 140px 24px 60px;
   }
 
   #about {
@@ -1125,22 +1125,23 @@ footer {
   }
 
   .hours-strip {
-    padding: 8px 16px;
-    gap: 8px 16px;
+    padding: 6px 12px;
+    gap: 6px 12px;
     flex-wrap: wrap;
     justify-content: center;
   }
   .hours-item {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 400;
     white-space: nowrap;
+    gap: 6px;
   }
   .hours-item strong {
     font-weight: 600;
   }
   .hours-item svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
 
   #reviews {
@@ -1154,6 +1155,19 @@ footer {
   .about-stats {
     flex-wrap: wrap;
     gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hours-strip {
+    padding: 5px 8px;
+    gap: 4px 10px;
+  }
+  .hours-item {
+    font-size: 0.6rem;
+  }
+  .hours-item:last-child {
+    display: none !important;
   }
 }
 
